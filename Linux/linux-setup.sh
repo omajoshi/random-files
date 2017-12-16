@@ -20,18 +20,27 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAvV4JgFcnbCPJAPLGOCIsRCH6KHqsPC1idMMCnV
 sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
-# part 3 in the README file
+# part 3
 sudo perl -i -pe 's/.*/Port 8080/ if $.==13' /etc/ssh/sshd_config
 sudo systemctl reload sshd
 
 sudo ufw allow 8080
 sudo ufw --force enable
 
-# part 4 in the README file
+# part 4
 sudo apt install python3.7 -y
-sudo ln -s /usr/bin/python3.7 /usr/local/bin/python3
 sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
+sudo ln -s /usr/bin/python3.7 /usr/local/bin/python3
 sudo ln -s /usr/bin/python3.7 /usr/local/bin/python
+sudo ln -s /usr/bin/python3.7 /usr/local/bin/py
 
-# part 5 in the README file
+sudo apt install virtualenv
+
+# part 5
+sudo apt install mariadb-server -y
+
+# part 6
 sudo apt install tmux -y
+
+# part 7
+sudo apt install git -y
