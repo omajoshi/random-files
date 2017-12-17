@@ -37,7 +37,7 @@ sudo ln -s /usr/bin/python3.7 /usr/local/bin/py
 sudo apt install virtualenv
 
 # part 5
-sudo apt install mariadb-server -y
+sudo apt install nginx -y
 
 # part 6
 sudo apt install tmux -y

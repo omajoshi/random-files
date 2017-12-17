@@ -14,6 +14,6 @@ Script Contents
 2. Creates a folder `~/ssh` to allow a specific SSH key to remotely connect
 3. Changes SSH port to `8080` and activates a firewall that blocks all but 8080
 4. Installs Python3.7 and sets it as the default `python`, `py`, and `python3`
-5. Installs `mariadb-server` for SQL server
+5. Installs `nginx` for server
 6. Installs `tmux` for running multiple terminal windows at once
 7. Installs `git` for practical reasons
