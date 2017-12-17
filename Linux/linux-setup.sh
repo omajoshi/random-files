@@ -34,7 +34,7 @@ sudo ln -s /usr/bin/python3.7 /usr/local/bin/python3
 sudo ln -s /usr/bin/python3.7 /usr/local/bin/python
 sudo ln -s /usr/bin/python3.7 /usr/local/bin/py
 
-sudo apt install virtualenv
+sudo apt install virtualenv -y
 
 # part 5
 sudo apt install nginx -y
