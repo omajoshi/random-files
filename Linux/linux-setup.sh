@@ -16,7 +16,7 @@ sudo usermod -aG sudo $user
 # part 2 in the README file
 sudo install -d -o $user -g $user -m 700 /home/$user/.ssh/
 cd /home/$user/.ssh/
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAvV4JgFcnbCPJAPLGOCIsRCH6KHqsPC1idMMCnVWlaOVIRqSLwyn6j5JjK+EVtL4xw/4RSN4R4+OQ9Aik+s9vTlWLSn9lVQG5MOX8ydrY6IG1jf50BWIgSVQBmyE1srOnrlc/xfWO+YvXToDRkdoJEL0rPFSmmmt5EGmDMTHYFG3lHYjUavE9zhqHdE/6angVQZoeqP/PEdNioGTWTkgIaogJ2ArHdB816URPatwCwAYEKdbM+bnG4VA+XMbfcxnnzND4/2CdNKBEhEIJpBwaqBbytm06pEgAHU71hyWnZYPwJfS8fvy1L/zcpRhGR5QzF9dJp24TUUdyl6td2YnJIw== rsa-key-20171129" | sudo cat > authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAlaK+wfTVmeLS3MlfHoUUFDQEj+O5hgLWUJXbBxtjhQ5YZ+AgZ2jd+m9JNoKeXPh42Q0s7P9SV/KsKppxP9HBKLs8umaTNPy5Q3+p6GkEzCEuAPUTeFwmALArnhZ3/Vdid1zbLtRVRwdHkNc+iZKFmUtCDkZSIYAYOA96C25w2qT9pnS+hUERlH02hWUwauln8JjVpqQgihs6dopaZ0yCIOMQ4r4IGi6O0HBYOIMompWRX7iTR7f3H8Dz76M/sRs80dhCRs9GzedPxVg+q75MECDoejewwb5OfozCln6bucyC8YfsYYpmKl/nMP/VFp+HPNV+JG8rqq7fkVhMIjeqxw== rsa-key-20171220" | sudo cat > authorized_keys
 sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
