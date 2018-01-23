@@ -21,10 +21,10 @@ sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
 # part 3
-sudo perl -i -pe 's/.*/Port 8080/ if $.==13' /etc/ssh/sshd_config
+sudo perl -i -pe 's/.*/Port 443/ if $.==13' /etc/ssh/sshd_config
 sudo systemctl reload sshd
 
-sudo ufw allow 8080
+sudo ufw allow 443
 sudo ufw --force enable
 
 # part 4
