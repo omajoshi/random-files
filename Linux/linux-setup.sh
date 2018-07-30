@@ -6,7 +6,7 @@ pw=${2?Need a password}
 
 if [ `whoami` != root ]; then
     echo Please run this script as root or using sudo
-    exit
+    exit 1
 fi
 
 sudo adduser --disabled-password --gecos "" $user
