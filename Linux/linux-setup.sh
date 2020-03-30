@@ -28,11 +28,11 @@ sudo ufw allow 443
 sudo ufw --force enable
 
 # part 4
-sudo apt install python3.7 -y
+sudo apt install python3.8 -y
 sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
-sudo ln -s /usr/bin/python3.7 /usr/local/bin/python3
-sudo ln -s /usr/bin/python3.7 /usr/local/bin/python
-sudo ln -s /usr/bin/python3.7 /usr/local/bin/py
+sudo ln -s /usr/bin/python3.8 /usr/local/bin/python3
+sudo ln -s /usr/bin/python3.8 /usr/local/bin/python
+sudo ln -s /usr/bin/python3.8 /usr/local/bin/py
 
 sudo apt install virtualenv -y
 
