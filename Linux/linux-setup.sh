@@ -29,7 +29,7 @@ sudo ufw --force enable
 
 # part 4
 sudo apt install python3.8 -y
-sudo ln -s -f /usr/local/bin/pip /usr/local/bin/pip3
+sudo ln -s -f /usr/bin/pip /usr/local/bin/pip3
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python3
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/py
