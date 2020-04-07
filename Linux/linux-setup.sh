@@ -21,11 +21,9 @@ sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
 # part 3
-sudo perl -i -pe 's/.*/Port 443/ if $.==13' /etc/ssh/sshd_config
-sudo systemctl reload sshd
-
-sudo ufw allow 443
-sudo ufw --force enable
+# Don't do this anymore - we need 443 for nginx
+# sudo perl -i -pe 's/.*/Port 443/ if $.==13' /etc/ssh/sshd_config
+# sudo systemctl reload sshd
 
 # part 4
 sudo apt install python3.8 -y
@@ -44,3 +42,8 @@ sudo apt install tmux -y
 
 # part 7
 sudo apt install git -y
+
+
+sudo ufw allow sshd
+sudo ufw allow Nginx Full
+sudo ufw --force enable
