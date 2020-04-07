@@ -46,6 +46,6 @@ sudo apt install tmux -y
 sudo apt install git -y
 
 
-sudo ufw allow sshd
+sudo ufw allow ssh
 sudo ufw allow 'Nginx Full'
 sudo ufw --force enable
