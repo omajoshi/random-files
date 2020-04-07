@@ -26,6 +26,8 @@ sudo chmod 600 authorized_keys
 # sudo systemctl reload sshd
 
 # part 4
+sudo apt update
+sudo apt upgrade -y
 sudo apt install python3.8 -y
 sudo ln -s -f /usr/bin/pip /usr/local/bin/pip3
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python3
