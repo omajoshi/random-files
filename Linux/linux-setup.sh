@@ -31,12 +31,6 @@ sudo apt upgrade -y
 
 
 
-sudo apt install python3.8 -y
-sudo ln -s -f /usr/bin/pip /usr/local/bin/pip3
-sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python3
-sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python
-sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/py
-
 sudo apt install virtualenv -y
 
 sudo apt install nginx -y
@@ -49,3 +43,8 @@ sudo apt install git -y
 sudo ufw allow ssh
 sudo ufw allow 'Nginx Full'
 sudo ufw --force enable
+
+sudo apt install python3.8 -y
+sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python3
+sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python
+sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/py
