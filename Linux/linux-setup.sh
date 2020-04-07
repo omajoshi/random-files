@@ -40,7 +40,7 @@ sudo add-apt-repository ppa:certbot/certbot
 
 sudo apt install python-certbot-nginx -y
 
-sudo ufw allow ssh
+sudo ufw allow 'OpenSSH'
 sudo ufw allow 'Nginx Full'
 sudo ufw --force enable
 
