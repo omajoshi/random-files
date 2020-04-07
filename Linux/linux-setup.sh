@@ -26,9 +26,6 @@ sudo chmod 600 authorized_keys
 # sudo perl -i -pe 's/.*/Port 443/ if $.==13' /etc/ssh/sshd_config
 # sudo systemctl reload sshd
 
-sudo apt update
-sudo apt upgrade -y
-
 
 
 sudo apt install virtualenv -y
@@ -48,3 +45,7 @@ sudo apt install python3.8 -y
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python3
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/python
 sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/py
+
+
+sudo apt update
+sudo apt upgrade -y
