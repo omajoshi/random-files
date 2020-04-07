@@ -36,6 +36,9 @@ sudo apt install tmux -y
 
 sudo apt install git -y
 
+sudo add-apt-repository ppa:certbot/certbot
+
+sudo apt install python-certbot-nginx
 
 sudo ufw allow ssh
 sudo ufw allow 'Nginx Full'
