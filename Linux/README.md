@@ -8,10 +8,4 @@ Instructions
 
 Script Contents
 ---
-1. Adds a password-protected sudo user (user and password passed as bash args)
-2. Creates a folder `~/ssh` to allow a specific SSH key to remotely connect
-3. Changes SSH port to `443` and activates a firewall that blocks all but 443
-4. Installs Python3.7 and sets it as the default `python`, `py`, and `python3`
-5. Installs `nginx` for server
-6. Installs `tmux` for running multiple terminal windows at once
-7. Installs `git` for practical reasons
+read the file
