@@ -53,4 +53,4 @@ sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/py
 sudo apt update
 sudo apt upgrade -y
 
-sudo echo "#!/bin/sh\n\nbash /home/omajoshi9/motd.sh" >> /etc/update-motd.d/15-welcome-screen
+echo '#!/bin/sh\n\nbash /home/omajoshi9/motd.sh' | sudo tee /etc/update-motd.d/15-welcome-screen > /dev/null
