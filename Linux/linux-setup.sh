@@ -26,7 +26,7 @@ sudo chmod 600 authorized_keys
 
 printf '#!/bin/sh\n\nbash /home/%s/motd.sh\n' "$user" | sudo tee /etc/update-motd.d/15-welcome-screen > /dev/null
 sudo chmod +x /etc/update-motd.d/15-welcome-screen
-echo -e "" | sudo tee -a /home/$user/motd.sh
+printf '\n' | sudo tee -a /home/$user/motd.sh
 
 
 sudo apt install virtualenv -y
