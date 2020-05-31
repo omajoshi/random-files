@@ -22,10 +22,11 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAoErgPvlJ+wsWp1yXJ1METBkqfQDdxQtg7KoaN5
 sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
-# Don't do this anymore - we need 443 for nginx
-# sudo perl -i -pe 's/.*/Port 443/ if $.==13' /etc/ssh/sshd_config
-# sudo systemctl reload sshd
 
+
+printf '#!/bin/sh\n\nbash /home/%s/motd.sh\n' "$user" | sudo tee /etc/update-motd.d/15-welcome-screen > /dev/null
+sudo chmod +x /etc/update-motd.d/15-welcome-screen
+echo -e "" | sudo tee -a /home/$user/motd.sh
 
 
 sudo apt install virtualenv -y
@@ -52,7 +53,3 @@ sudo ln -s -f /usr/bin/python3.8 /usr/local/bin/py
 
 sudo apt update
 sudo apt upgrade -y
-
-echo -e '#!/bin/sh\n\nbash /home/$user/motd.sh' | sudo tee /etc/update-motd.d/15-welcome-screen > /dev/null
-sudo chmod +x /etc/update-motd.d/15-welcome-screen
-echo -e "" | sudo tee -a /home/$user/motd.sh
