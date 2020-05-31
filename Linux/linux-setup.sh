@@ -23,7 +23,7 @@ sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
 
-
+wget -O /home/$user/ascii-art.ans https://raw.githubusercontent.com/omajoshi9/random-files/master/Linux/ascii-art.ans
 printf '#!/bin/sh\n\nbash /home/%s/motd.sh\n' "$user" | sudo tee /etc/update-motd.d/15-welcome-screen > /dev/null
 sudo chmod +x /etc/update-motd.d/15-welcome-screen
 printf '\n' | sudo tee -a /home/$user/motd.sh
