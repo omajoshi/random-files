@@ -37,7 +37,7 @@ sudo apt install tmux -y
 
 sudo apt install git -y
 
-sudo add-apt-repository ppa:certbot/certbot
+sudo add-apt-repository -r ppa:certbot/certbot
 
 sudo apt install python-certbot-nginx -y
 
