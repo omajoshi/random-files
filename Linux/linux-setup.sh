@@ -27,7 +27,7 @@ sudo wget -O /home/$user/ascii-art.ans https://raw.githubusercontent.com/omajosh
 printf '#!/bin/sh\n\nbash /home/%s/motd.sh\n' "$user" | sudo tee /etc/update-motd.d/15-welcome-screen > /dev/null
 sudo chmod +x /etc/update-motd.d/15-welcome-screen
 printf '\ncat /home/%s/ascii-art.ans' "$user" | sudo tee /home/$user/motd.sh
-printf 'set tabsize 4\nset tabstospaces\n' | sudo tee /home/$user/.nanorc
+printf 'set tabsize 4\nset tabstospaces\n' | tee /home/$user/.nanorc
 
 
 sudo apt install virtualenv -y
