@@ -18,7 +18,7 @@ sudo usermod -aG sudo $user
 # enable ssh key for the user, not just root
 sudo install -d -o $user -g $user -m 700 /home/$user/.ssh/
 cd /home/$user/.ssh/
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAoErgPvlJ+wsWp1yXJ1METBkqfQDdxQtg7KoaN5zfHQ1sOLgqAbwqnQqB4psjgQMtZljrjfJkFEvVtHnG6Qt2QGJghNpZQQdo9V28GDlbfO3dfO9dqn1EjEqU7xTqpwCxmr3P/sqCbzrAaWFq5mNMgv8xoa0A57Pb++Dx4oXgMw7Dq+cmCTT4bFODTcvkWrlUYcHFyuS1d4Mado607TsLX9/QHO+JgJFgyK3Snb8SkEwoVvuix1VYX75UGYRNnSy3pfI2z6roFa0i/s59WdwA+4UMeeldQN3XZMcN1/GUzN7Vsa7q8L6PWHFi/4DQ1UZqsP6sqMbEbh6ZJNR/diUuHQ== rsa-key-20180730" | sudo cat > authorized_keys
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBrqqYM+Ff3KSTrBeVhmVQgN+R3PjwniVyjQQxWbHjBR om@omajoshi.com" | sudo cat > authorized_keys
 sudo chown $user:$user authorized_keys
 sudo chmod 600 authorized_keys
 
